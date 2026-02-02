@@ -81,5 +81,5 @@ open class MyScreen(title: Text, val parent:Screen): Screen(title) {
             }
         }
     }
-    infix fun ClickableWidget.tooltip(string: MutableText?) = apply { tooltip = Tooltip.of(string) }
+    infix fun ClickableWidget.tooltip(string: MutableText?) = apply { setTooltip(Tooltip.of(string)) }
 }
